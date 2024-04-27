@@ -1,0 +1,274 @@
+.HomeContainer{
+    width: 100%;
+    /* height: 65vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+    background-color: #495765;
+    align-items: center;
+
+}
+button {
+  padding: 15px 30px;
+  margin: 10px 0;
+  background-color: #f1860b; /* Coral red button color */
+  color: #ffffff; /* White button text color */
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+button{
+  background-color: #151414; /* Darker red on hover */
+  transform: translateY(-2px); /* Lift on hover */
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    /* width: 700px; */
+
+}
+.subSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.para{
+    font-size: 40px;
+}
+.userSize{
+    display: flex;
+    column-gap: 10px;
+    width: 50%;
+}
+.matrixSize{
+    font-size: 50px;
+    color: antiquewhite;
+    font-style: initial;
+    font-family: monospace;
+}
+.matrixSection input{
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+
+}
+.matrixSection{
+ border-left: 5px solid black;
+ border-right: 5px solid black;
+ border-radius: 10px;
+}
+.matrixSection div{
+ padding: 5px;
+
+}
+.subSection input[type="number"] {
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Style the up and down buttons */
+.subSection input[type="number"]::-webkit-inner-spin-button,
+.subSection input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove default styles */
+    appearance: none;
+    margin: 0; /* Remove default margin */
+    width: 1.5em; /* Set width of the buttons */
+    height: 1.5em; /* Set height of the buttons */
+    background-color: #f0f0f0; /* Button background color */
+    border-radius: 50%; /* Make the buttons circular */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover and focus styles for the up and down buttons */
+.subSection input[type="number"]::-webkit-inner-spin-button:hover,
+.subSection input[type="number"]::-webkit-outer-spin-button:hover,
+.subSection input[type="number"]::-webkit-inner-spin-button:focus,
+.subSection input[type="number"]::-webkit-outer-spin-button:focus {
+    background-color: #ccc; /* Change background color on hover and focus */
+    outline: none; /* Remove default outline */
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+    color: burlywood
+}
+.MatrixContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Matrix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .HomeContainer
+    {
+        /* height: 100vh; */
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        /* padding: 5px; */
+        background-color: #495765;
+        align-items:center;
+    }
+    .matrixSize{
+        font-size: 20px;
+        color: antiquewhite;
+        font-style: initial;
+        font-family: monospace;
+    }
+    form{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        /* width: 300px; */
+        /* margin-top: 400px; */
+        /* margin-top: 200px; */
+    }
+    .para{
+        font-size: 30px;
+    }
+    .userSize{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        width: 200px;
+    }
+    .subSection{
+        display: flex;
+    flex-direction: column;
+align-items: center;
+row-gap: 10px;
+    }
+    .matrixSection input{
+        width: 30px;
+        height: 20px;
+        text-align: center;
+        font-weight: 900;
+    font-size: 20px;
+    }
+    .matrixSection{
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        border-radius: 10px;
+    }
+    .matrixSection div{
+        padding: 5px;
+
+    }
+    
+    .subSection input[type="number"] {
+        padding: 8px; /* Adjust padding as needed */
+        border: 1px solid #ccc; /* Border style */
+        border-radius: 5px; /* Rounded corners */
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    .HomeContainer
+    {
+        /* height: 100vh; */
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        /* padding: 5px; */
+        background-color: #495765;
+        align-items:center;
+    }
+    .matrixSize{
+        font-size: 30px;
+        color: antiquewhite;
+        font-style: initial;
+        font-family: monospace;
+    }
+    .subSection input[type="number"] {
+        padding: 8px; /* Adjust padding as needed */
+        border: 1px solid #ccc; /* Border style */
+        border-radius: 5px; /* Rounded corners */
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    form{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .para{
+        font-size: 40px;
+    }
+    .section-1{
+        display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+        /* margin-top: 400px; */
+        /* margin-top: 200px; */
+    }
+    .userSize{
+        display: flex;
+        /* flex-direction: column; */
+        row-gap: 5px;
+    }
+    .subSection{
+        display: flex;
+    /* flex-direction: column; */
+align-items: center;
+justify-content: center;
+    }
+    .matrixSection input{
+           width: 50px;
+    height: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+
+    }
+    .matrixSection{
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        border-radius: 10px;
+    }
+    .matrixSection div{
+        padding: 5px;
+
+    }
+    
+    .Matrix{
+
+    }
+}
