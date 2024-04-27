@@ -52,6 +52,7 @@ const handleCloseInstructions = () => {
     <p className='point'>Enter the dimensions (rows and columns) of the matrices.</p>
     <p className='point'>Before multiplying two matrices, ensure that the number of columns in the first matrix matches the number of rows in the second matrix.
      If this condition is not met, matrix multiplication is not possible.</p>
+     <p>The maximum size of the matrix is 8x8.</p>
     <p className='point'>Input the values for each cell of the matrices.</p>
     <p className='point'>Click the "Calculate" button to perform matrix multiplication.</p>
     <p className='point'>View the result in the output area.</p>
