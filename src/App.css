@@ -104,6 +104,7 @@ h1 {
 }
 
 .point {
+ color:#100f0e !important;
   margin-bottom: 10px;
   font-size: 1.2rem;
   text-align: center;

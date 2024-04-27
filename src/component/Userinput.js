@@ -39,7 +39,8 @@ export const Userinput = () => {
         setMatrix2Values(matrix2Array);
         }
         else{
-            alert("if matrix1 is m*n so only matrix2 must be n*x ");
+            alert("If matrixA has dimensions m x n, then matrixB must have dimensions n x x.");
+
         }
     };
     const handlecalsubmit=(e)=>{
@@ -87,7 +88,9 @@ calculatematrix(transposedMatrixArray);
         console.log(result1);
         setresult([...result1]);
         console.log(result);
-        scrollToBottom();
+        setTimeout(()=>{
+            scrollToBottom();
+        },1000);
     };
     
     return (
