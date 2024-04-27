@@ -9,6 +9,10 @@
     align-items: center;
 
 }
+.buttonSection{
+    display: flex;
+     column-gap: 10px;
+}
 button {
   padding: 15px 30px;
   margin: 10px 0;

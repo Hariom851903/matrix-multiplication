@@ -20,6 +20,9 @@ const handleInstructionsClick = () => {
   setShowInstructions(true);
 };
 
+const exithndlr=()=>{
+  setstart(false);
+}
 // Function to handle close of instructions modal
 const handleCloseInstructions = () => {
   setShowInstructions(false);
@@ -28,7 +31,7 @@ const handleCloseInstructions = () => {
 
 
   return (
-    start? <Userinput/> :
+    start? <Userinput exithndlr={exithndlr}/> :
     <div className='container'>
       <div className="home-container">
       <h1>Matrix Multication Calculator</h1>

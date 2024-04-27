@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/Userinput.css'
 import MatrixComponent from './MatrixComponent';
 import ResultComponent from './ResultComponent';
-export const Userinput = () => {
+export const Userinput = ({exithndlr}) => {
     const [matrix1, setMatrix1] = useState({ row1: '', col1: '' });
     const [matrix2, setMatrix2] = useState({ row2: '', col2: '' });
     const [submitted, setSubmitted] = useState(false);
@@ -39,7 +39,7 @@ export const Userinput = () => {
         setMatrix2Values(matrix2Array);
         }
         else{
-            alert("If matrixA has dimensions m x n, then matrixB must have dimensions n x x.");
+            alert("If matrixA has dimensions m * n, then matrixB must have dimensions n * p.");
 
         }
     };
@@ -89,10 +89,17 @@ calculatematrix(transposedMatrixArray);
         setresult([...result1]);
         console.log(result);
         setTimeout(()=>{
+
             scrollToBottom();
+          
         },1000);
     };
     
+  const resethndlr=()=>{
+    setSubmitted(false)
+    setresult([]);
+  }
+
     return (
         <div className='HomeContainer'>
         <form onSubmit={handleSubmit}>
@@ -140,15 +147,16 @@ calculatematrix(transposedMatrixArray);
                    
                    </div>
                     </div>
-                      <div> 
+                      <div  className='buttonSection'> 
                       <button type="submit">Calculate</button>
+                      <button onClick={resethndlr}>Reset</button>
                       </div>
                 </div>
                
             )}
         
         </form>
-             {result.length!==0 && (<ResultComponent resultMatrix={result}/>) }
+             {(result.length!==0 && submitted) && (<ResultComponent resultMatrix={result} exithndlr={exithndlr}/>) }
         </div>
     );
 };

@@ -1,6 +1,9 @@
 import React from 'react';
 
-const ResultComponent = ({ resultMatrix }) => {
+const ResultComponent = ({ resultMatrix,exithndlr}) => {
+    const exitfunction=()=>{
+        exithndlr();
+    }
     return (
         <div className='Matrix'>
             <p>Result Matrix:</p>
@@ -18,7 +21,7 @@ const ResultComponent = ({ resultMatrix }) => {
                 </div>
             ))}
             </div>
-            
+            <button onClick={exitfunction}>Exit</button>
         </div>
     );
 };
