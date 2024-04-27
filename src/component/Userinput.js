@@ -108,15 +108,15 @@ calculatematrix(transposedMatrixArray);
                 <div className='subSection'>
                     <div className='matrixSize'>Matrix A:</div>
                     <div className='userSize'>
-                        <input type='number' name="row1" value={matrix1.row1} onChange={handleMatrix1Change} min={1} max={10} disabled={submitted} required placeholder='Enter Row'/>
-                        <input type='number' name="col1" value={matrix1.col1} onChange={handleMatrix1Change} min={1} max={10} disabled={submitted} required placeholder='Enter Column'd  />
+                        <input type='number' name="row1" value={matrix1.row1} onChange={handleMatrix1Change} min={1} max={8} disabled={submitted} required placeholder='Enter Row'/>
+                        <input type='number' name="col1" value={matrix1.col1} onChange={handleMatrix1Change} min={1} max={8} disabled={submitted} required placeholder='Enter Column'd  />
                     </div>
                 </div>
                 <div className='subSection'>
                     <div className='matrixSize'>  Matrix B:</div>
                     <div className='userSize'>
-                        <input type='number' name="row2" value={matrix2.row2} onChange={handleMatrix2Change} min={1} max={10} disabled={submitted} required placeholder='Enter Row'/>
-                        <input type='number' name="col2" value={matrix2.col2} onChange={handleMatrix2Change} min={1} max={10} disabled={submitted} required placeholder='Enter Column' />
+                        <input type='number' name="row2" value={matrix2.row2} onChange={handleMatrix2Change} min={1} max={8} disabled={submitted} required placeholder='Enter Row'/>
+                        <input type='number' name="col2" value={matrix2.col2} onChange={handleMatrix2Change} min={1} max={8} disabled={submitted} required placeholder='Enter Column' />
                     </div>
                 </div>
                 {!submitted && <button type="submit">Submit</button>}
