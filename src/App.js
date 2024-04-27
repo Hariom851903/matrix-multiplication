@@ -46,14 +46,12 @@ const handleCloseInstructions = () => {
         className="sweet-instruction"
       >
        <div className='instruction'>
-    <p className='point'>Fill in the players' names in the input fields provided.</p>
-    <p className='point'>This is a color game where you need to match the 
-    color of the box with the color shown on the dice.</p>
-    <p className='point'>Click on the boxes to reveal their colors.</p>
-    <p className='point'>If the color matches the dice, you score a point!</p>
-    <p className='point'>The player with the highest score wins!</p>
-    <p className='point'>If anyone's score reaches more than half of the total number
-     of boxes plus one to secure your victory!, they will win</p>
+    <p className='point'>Enter the dimensions (rows and columns) of the matrices.</p>
+    <p className='point'>Before multiplying two matrices, ensure that the number of columns in the first matrix matches the number of rows in the second matrix.
+     If this condition is not met, matrix multiplication is not possible.</p>
+    <p className='point'>Input the values for each cell of the matrices.</p>
+    <p className='point'>Click the "Calculate" button to perform matrix multiplication.</p>
+    <p className='point'>View the result in the output area.</p>
 </div>
 
       </SweetAlert>
