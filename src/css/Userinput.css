@@ -84,27 +84,7 @@ form{
     font-size: 30px;
 }
 
-/* Style the up and down buttons */
-.subSection input[type="number"]::-webkit-inner-spin-button,
-.subSection input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none; /* Remove default styles */
-    appearance: none;
-    margin: 0; /* Remove default margin */
-    width: 1.5em; /* Set width of the buttons */
-    height: 1.5em; /* Set height of the buttons */
-    background-color: #f0f0f0; /* Button background color */
-    border-radius: 50%; /* Make the buttons circular */
-    cursor: pointer; /* Change cursor to pointer */
-}
 
-/* Hover and focus styles for the up and down buttons */
-.subSection input[type="number"]::-webkit-inner-spin-button:hover,
-.subSection input[type="number"]::-webkit-outer-spin-button:hover,
-.subSection input[type="number"]::-webkit-inner-spin-button:focus,
-.subSection input[type="number"]::-webkit-outer-spin-button:focus {
-    background-color: #ccc; /* Change background color on hover and focus */
-    outline: none; /* Remove default outline */
-}
 
 p {
     font-size: 20px;

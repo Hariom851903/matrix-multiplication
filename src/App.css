@@ -14,6 +14,7 @@
   animation: fadeInDown 1s ease; /* Fade-in animation */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White shadow for depth */
+  text-align: center;
 }
 .container{
   height: 100%;
